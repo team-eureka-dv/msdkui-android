@@ -31,9 +31,9 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 
-/**
- * A view that shows an options panel to select an available mode of
- * {@link Route.TrafficPenaltyMode}.
+/*
+  A view that shows an options panel to select an available mode of
+  {@link FTCRRoute.TrafficPenaltyMode}.
  */
 public class TrafficOptionsPanel extends OptionsPanel implements OptionItem.OnChangedListener {
     public enum Traffic {
@@ -123,27 +123,27 @@ public class TrafficOptionsPanel extends OptionsPanel implements OptionItem.OnCh
         setOptionItems(Collections.singletonList(mSubOptionItem));
     }
 
-    /**
-     * Gets the underlying {@link DynamicPenalty}.
-     * @return the {@link DynamicPenalty} or null if nothing was set.
+    /*
+      Gets the underlying {@link DynamicPenalty}.
+      @return the {@link DynamicPenalty} or null if nothing was set.
      */
     public Traffic getTraffic() {
         populateDynamicPenalty();
         return mTraffic;
     }
 
-    /**
-     * Sets the {@link DynamicPenalty} to populate this panel.
-     * @param penalty the {@link DynamicPenalty} to use for this panel.
+    /*
+      Sets the {@link DynamicPenalty} to populate this panel.
+      @param penalty the {@link DynamicPenalty} to use for this panel.
      */
     public void setDynamicPenalty(final FTCRRouteOptions routeOptions) {
         mRouteOptions = routeOptions;
         select(mRouteOptions.isTrafficUsed() ? Traffic.ON : Traffic.OFF);
     }
 
-    /**
-     * Populates the panel using the set {@link DynamicPenalty}. Does nothing if no {@link DynamicPenalty}
-     * was set.
+    /*
+     Populates the panel using the set {@link DynamicPenalty}. Does nothing if no {@link DynamicPenalty}
+	 was set.
      */
     public void populateDynamicPenalty() {
         final String label = ((SingleChoiceOptionItem) mSubOptionItem).getSelectedItemLabel();

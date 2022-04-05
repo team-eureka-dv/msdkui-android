@@ -32,6 +32,7 @@ import com.here.msdkui.R;
 import com.here.msdkui.common.BaseView;
 import com.here.msdkui.common.DistanceFormatterUtil;
 import com.here.msdkui.common.ThemeUtil;
+import com.nokia.maps.restrouting.Maneuver;
 
 import java.util.EnumMap;
 import java.util.EnumSet;

@@ -178,20 +178,20 @@ public class RouteDescriptionList extends CustomRecyclerView {
     }
 
     /**
-     * Gets a list of {@link Route} elements which was used to create the {@link RouteDescriptionItem} elements of
+     * Gets a list of {@link FTCRRoute} elements which was used to create the {@link RouteDescriptionItem} elements of
      * this list.
      *
-     * @return a list of {@link Route} elements.
+     * @return a list of {@link FTCRRoute} elements.
      */
     public List<FTCRRoute> getRoutes() {
         return mRouteList;
     }
 
     /**
-     * Sets a list of {@link Route} elements to the list. The given list will be used to create the rows of
+     * Sets a list of {@link FTCRRoute} elements to the list. The given list will be used to create the rows of
      * this list.
      *
-     * @param routes the list of {@link Route} elements to set.
+     * @param routes the list of {@link FTCRRoute} elements to set.
      * @throws IllegalArgumentException when the list is null.
      */
     public void setRoutes(FTCRRoutePlan plan, final List<FTCRRoute> routes) {
@@ -207,10 +207,10 @@ public class RouteDescriptionList extends CustomRecyclerView {
     }
 
     /**
-     * A convenient method to set a list of {@link RouteResult} elements to this list.
-     * The routes included from {@link RouteResult} will be used to create the list items.
+     * A convenient method to set a list of {@link FTCRRoute} elements to this list.
+     * The routes included from {@link FTCRRoute} will be used to create the list items.
      *
-     * @param routesResult a list of {@link RouteResult} elements to be used for this list.
+     * @param routesResult a list of {@link FTCRRoute} elements to be used for this list.
      * @throws IllegalArgumentException when the list is null.
      */
     public void setRoutesResult(FTCRRoutePlan routePlan, final List<FTCRRoute> routesResult) {

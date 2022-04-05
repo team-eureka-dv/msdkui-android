@@ -30,7 +30,7 @@ import com.here.android.mpa.ftcr.FTCRRouteOptions;
 import com.here.msdkui.R;
 
 /**
- * A view that shows all supported elements of {@link RouteOptions.TransportMode}
+ * A view that shows all supported elements of {@link FTCRRouteOptions.TransportMode}
  * with or without content fragment using a {@link TabLayout}. Each tab shows a transport mode.
  * Only one transport mode can be selected at a time.
  * This view can be customized by calling {@link TransportModePanel#setAdapter(TransportModePanelAdapter)}
@@ -173,8 +173,8 @@ public class TransportModePanel extends LinearLayout implements TabLayout.OnTabS
     }
 
     /**
-     * Gets the selected {@link RouteOptions.TransportMode}.
-     * @return the selected {@link RouteOptions.TransportMode}.
+     * Gets the selected {@link FTCRRouteOptions.TransportMode}.
+     * @return the selected {@link FTCRRouteOptions.TransportMode}.
      */
     public FTCRRouteOptions.TransportMode getSelectedTransportMode() {
         return mPanelAdapter.getTransportModes()
@@ -182,9 +182,9 @@ public class TransportModePanel extends LinearLayout implements TabLayout.OnTabS
     }
 
     /**
-     * Sets the {@link RouteOptions.TransportMode}
+     * Sets the {@link FTCRRouteOptions.TransportMode}
      * that should be selected.
-     * @param transportMode the {@link RouteOptions.TransportMode}
+     * @param transportMode the {@link FTCRRouteOptions.TransportMode}
      *                     to be selected.
      */
     public void setSelectedTransportMode(final FTCRRouteOptions.TransportMode transportMode) {

@@ -36,7 +36,7 @@ public class GuidanceEstimatedArrivalViewPresenter extends BaseGuidancePresenter
      * Constructs a new instance.
      *
      * @param navigationManager
-     *         a {@link NavigationManager} to be used for guidance handling.
+     *         a {@link FTCRNavigationManager} to be used for guidance handling.
      */
     public GuidanceEstimatedArrivalViewPresenter(FTCRNavigationManager navigationManager,
                                                  PositioningManager positioningManager) {

@@ -41,7 +41,7 @@ public class SimpleTransportModePanelAdapter extends TransportModePanelAdapter {
 
     /**
      * Constructs a new instance using all supported
-     * {@link RouteOptions.TransportMode} elements.
+     * {@link FTCRRouteOptions.TransportMode} elements.
      *
      * @param context
      *         the required {@link Context}.
@@ -60,12 +60,12 @@ public class SimpleTransportModePanelAdapter extends TransportModePanelAdapter {
 
     /**
      * Constructs a new instance using the given list of
-     * {@link RouteOptions.TransportMode} elements.
+     * {@link FTCRRouteOptions.TransportMode} elements.
      *
      * @param context
      *         the required {@link Context}.
      * @param transportModes
-     *         a list of {@link RouteOptions.TransportMode} elements.
+     *         a list of {@link FTCRRouteOptions.TransportMode} elements.
      */
     public SimpleTransportModePanelAdapter(final Context context, List<FTCRRouteOptions.TransportMode> transportModes) {
         super(null);
@@ -117,7 +117,7 @@ public class SimpleTransportModePanelAdapter extends TransportModePanelAdapter {
      * Gets a custom {@link TabView} with drawable icons which can be used to add labels
      * by calling {@link TabView#setLabel(String)} in the respective switch statements.
      * @deprecated Please use
-     * {@link #getCustomTabView(RouteOptions.TransportMode)} instead.
+     * {@link #getCustomTabView(FTCRRouteOptions.TransportMode)} instead.
      */
     @Deprecated
     @Override

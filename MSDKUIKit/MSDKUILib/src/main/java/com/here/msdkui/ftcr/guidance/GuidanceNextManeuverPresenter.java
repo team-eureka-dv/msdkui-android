@@ -46,7 +46,7 @@ public class GuidanceNextManeuverPresenter extends BaseGuidancePresenter {
      * @param context
      *         a {@link Context} to retrieve resources.
      * @param navigationManager
-     *         a {@link NavigationManager} to be used for guidance handling.
+     *         a {@link FTCRNavigationManager} to be used for guidance handling.
      * @param route
      *         a route to be used for guidance.
      */
@@ -92,10 +92,10 @@ public class GuidanceNextManeuverPresenter extends BaseGuidancePresenter {
     }
 
     /**
-     * Gets the icon identifier for {@link Maneuver}.
+     * Gets the icon identifier for {@link FTCRManeuver}.
      *
      * @param maneuver
-     *         the {@link Maneuver} to get the icon id from.
+     *         the {@link FTCRManeuver} to get the icon id from.
      *
      * @return the resource id of the icon.
      */
@@ -105,7 +105,7 @@ public class GuidanceNextManeuverPresenter extends BaseGuidancePresenter {
     }
 
     /**
-     * Gets the street name for {@link Maneuver}.
+     * Gets the street name for {@link FTCRManeuver}.
      */
     private String getStreet(FTCRManeuver maneuver) {
         return GuidanceManeuverUtil.determineNextManeuverStreet(mContext, maneuver, this);

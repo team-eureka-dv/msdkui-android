@@ -32,6 +32,7 @@ import androidx.annotation.RequiresApi;
 import com.here.android.mpa.ftcr.FTCRRoute;
 import com.here.android.mpa.ftcr.FTCRRouteOptions;
 import com.here.android.mpa.ftcr.FTCRRoutePlan;
+import com.here.android.mpa.routing.Route;
 import com.here.msdkui.R;
 import com.here.msdkui.common.BaseView;
 import com.here.msdkui.common.ThemeUtil;
@@ -349,7 +350,7 @@ public class RouteDescriptionItem extends BaseView {
     }
 
     /**
-     * Indicates whether the {@link RouteOptions.TransportMode} is bike or pedestrian.
+     * Indicates whether the {@link FTCRRouteOptions.TransportMode} is bike or pedestrian.
      * @return true if bike or pedestrian, false otherwise.
      */
     public boolean isBikeOrPedestrian() {

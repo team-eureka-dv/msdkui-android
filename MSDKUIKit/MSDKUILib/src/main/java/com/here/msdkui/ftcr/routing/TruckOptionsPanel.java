@@ -34,7 +34,8 @@ import java.util.Map;
 
 
 /**
- * A view that shows an options panel to select the available truck options provided by {@link RouteOptions}.
+ * A view that shows an options panel to select the available truck options provided by
+ * {@link FTCRRouteOptions}.
  */
 @SuppressWarnings({"PMD.ModifiedCyclomaticComplexity", "PMD.StdCyclomaticComplexity"}) // Those rules are deprecated.
 public class TruckOptionsPanel extends OptionsPanel implements OptionItem.OnChangedListener {
@@ -145,18 +146,18 @@ public class TruckOptionsPanel extends OptionsPanel implements OptionItem.OnChan
     }
 
     /**
-     * Gets the underlying {@link RouteOptions}.
+     * Gets the underlying {@link FTCRRouteOptions}.
      *
-     * @return the {@link RouteOptions} that was set for this panel or null if no options have been set.
+     * @return the {@link FTCRRouteOptions} that was set for this panel or null if no options have been set.
      */
     public FTCRRouteOptions getRouteOptions() {
         return mRouteOptions;
     }
 
     /**
-     * Sets the {@link RouteOptions} and populates this panel based on the provided options.
+     * Sets the {@link FTCRRouteOptions} and populates this panel based on the provided options.
      *
-     * @param routeOptions the {@link RouteOptions} to set for this panel.
+     * @param routeOptions the {@link FTCRRouteOptions} to set for this panel.
      * @throws IllegalArgumentException if routeOptions is null.
      */
     @SuppressWarnings({"PMD.CyclomaticComplexity"}) // This function is not complicated.

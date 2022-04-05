@@ -32,9 +32,9 @@ import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * A view that shows an options panel to select the available elements of
- * {@link RouteOptions.Type}.
+ * {@link FTCRRouteOptions.Type}.
  *
- * @see RouteOptions
+ * @see FTCRRouteOptions
  */
 public class RouteTypeOptionsPanel extends OptionsPanel implements OptionItem.OnChangedListener {
 
@@ -122,7 +122,7 @@ public class RouteTypeOptionsPanel extends OptionsPanel implements OptionItem.On
     }
 
     /**
-     * Gets the underlying {@link RouteOptions}.
+     * Gets the underlying {@link FTCRRouteOptions}.
      * @return the route options or null if no route options have been set.
      */
     public FTCRRouteOptions getRouteOptions() {
@@ -134,7 +134,7 @@ public class RouteTypeOptionsPanel extends OptionsPanel implements OptionItem.On
     }
 
     /**
-     * Sets the {@link RouteOptions} to be used for this panel.
+     * Sets the {@link FTCRRouteOptions} to be used for this panel.
      * @param routeOptions the route options to use for this panel.
      */
     public void setRouteOptions(final FTCRRouteOptions routeOptions) {

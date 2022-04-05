@@ -50,7 +50,7 @@ public class GuidanceManeuverPresenter extends BaseGuidancePresenter {
      * @param context
      *         a {@link Context} to retrieve resources.
      * @param navigationManager
-     *         a {@link NavigationManager} to be used for guidance handling.
+     *         a {@link FTCRNavigationManager} to be used for guidance handling.
      * @param route
      *         a route to be used for guidance.
      */
@@ -134,10 +134,10 @@ public class GuidanceManeuverPresenter extends BaseGuidancePresenter {
     }
 
     /**
-     * Gets the icon identifier for {@link Maneuver}.
+     * Gets the icon identifier for {@link FTCRManeuver}.
      *
      * @param maneuver
-     *         the {@link Maneuver} to get the icon id from.
+     *         the {@link FTCRManeuver} to get the icon id from.
      *
      * @return the resource id of the icon.
      */
@@ -147,10 +147,10 @@ public class GuidanceManeuverPresenter extends BaseGuidancePresenter {
     }
 
     /**
-     * Gets the street name for {@link Maneuver}.
+     * Gets the street name for {@link FTCRManeuver}.
      *
      * @param maneuver
-     *         the {@link Maneuver} to get street name from.
+     *         the {@link FTCRManeuver} to get street name from.
      *
      * @return the street name.
      */
@@ -159,10 +159,10 @@ public class GuidanceManeuverPresenter extends BaseGuidancePresenter {
     }
 
     /**
-     * Gets next road icon for given {@link Maneuver}.
+     * Gets next road icon for given {@link FTCRManeuver}.
      *
      * @param maneuver
-     *         the {@link Maneuver} to get next road icon from.
+     *         the {@link FTCRManeuver} to get next road icon from.
      *
      * @return {@link Bitmap} for next road icon.
      */

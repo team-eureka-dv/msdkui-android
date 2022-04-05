@@ -48,7 +48,7 @@ public abstract class TransportModePanelAdapter extends FragmentStatePagerAdapte
 
     /**
      * Constructs a new instance using a {@link FragmentManager} and a list of
-     * {@link RouteOptions.TransportMode}.
+     * {@link FTCRRouteOptions.TransportMode}.
      *
      * @param manager  the required {@link FragmentManager}.
      * @param transportModes the list to use for this adapter.
@@ -76,7 +76,7 @@ public abstract class TransportModePanelAdapter extends FragmentStatePagerAdapte
 
     /**
      * Gets the custom {@link TabView} at a given position, which represents a
-     * {@link RouteOptions.TransportMode}.
+     * {@link FTCRRouteOptions.TransportMode}.
      *
      * This method can be used to update {@link com.google.android.material.tabs.TabLayout.Tab}
      * with the returned custom {@link TabView}.
@@ -94,7 +94,7 @@ public abstract class TransportModePanelAdapter extends FragmentStatePagerAdapte
     }
 
     /**
-     * Gets all elements of {@link RouteOptions.TransportMode}
+     * Gets all elements of {@link FTCRRouteOptions.TransportMode}
      * associated with this adapter.
      *
      * @return the associated transport modes.
@@ -104,7 +104,7 @@ public abstract class TransportModePanelAdapter extends FragmentStatePagerAdapte
     }
 
     /**
-     * Sets a list containing elements of {@link RouteOptions.TransportMode}
+     * Sets a list containing elements of {@link FTCRRouteOptions.TransportMode}
      * that should be associated with this adapter.
      *
      * @param transportModes the list of transport modes.
@@ -119,28 +119,28 @@ public abstract class TransportModePanelAdapter extends FragmentStatePagerAdapte
      * <p>If you don't want to display the content and only want to have a {@link TabView} in {@link TransportModePanel},
      * please return null and return false from {@link TransportModePanelAdapter#isContentVisible()} method.</p>
      *
-     * @param mode the {@link RouteOptions.TransportMode}.
+     * @param mode the {@link FTCRRouteOptions.TransportMode}.
      * @return the fragment of the panel hosting the content.
      */
     public abstract Fragment getContent(FTCRRouteOptions.TransportMode mode);
 
     /**
      * Gets the {@link TabView} view for the given
-     * {@link RouteOptions.TransportMode}.
+     * {@link FTCRRouteOptions.TransportMode}.
      *
-     * @param mode the {@link RouteOptions.TransportMode}.
+     * @param mode the {@link FTCRRouteOptions.TransportMode}.
      * @return the {@link TabView} that is used to represent the given transport mode.
      * @deprecated Please use
-     * {@link #getCustomTabView(RouteOptions.TransportMode)} instead.
+     * {@link #getCustomTabView(FTCRRouteOptions.TransportMode)} instead.
      */
     @Deprecated
     public abstract TabView getTabCustomView(FTCRRouteOptions.TransportMode mode);
 
     /**
      * Gets the {@link TabView} view for the given
-     * {@link RouteOptions.TransportMode}.
+     * {@link FTCRRouteOptions.TransportMode}.
      *
-     * @param mode the {@link RouteOptions.TransportMode}.
+     * @param mode the {@link FTCRRouteOptions.TransportMode}.
      * @return the {@link TabView} that is used to represent the given transport mode.
      */
     public abstract TabView getCustomTabView(FTCRRouteOptions.TransportMode mode);
@@ -150,7 +150,7 @@ public abstract class TransportModePanelAdapter extends FragmentStatePagerAdapte
      * Indicates whether the content is visible.
      *
      * This is responsible for showing the fragment hosting the content for a
-     * {@link RouteOptions.TransportMode}
+     * {@link FTCRRouteOptions.TransportMode}
      * in the {@link TransportModePanel}. If the method returns false, the method
      * {@link TransportModePanelAdapter#getItem(int)} will be ignored.
      *

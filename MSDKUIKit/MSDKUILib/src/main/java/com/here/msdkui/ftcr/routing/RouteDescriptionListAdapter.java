@@ -23,13 +23,15 @@ import android.view.ViewGroup;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.here.android.mpa.ftcr.FTCRRoute;
+import com.here.android.mpa.ftcr.FTCRRouteOptions;
 import com.here.android.mpa.ftcr.FTCRRoutePlan;
 import com.here.msdkui.common.measurements.UnitSystem;
 
 import java.util.List;
 
 /**
- * An adapter class that acts as a bridge between a list of {@link Route} elements and the corresponding
+ * An adapter class that acts as a bridge between a list of {@link FTCRRoute} elements and the
+ * corresponding
  * view holder items constructed as an instance of {@link RouteDescriptionItem}.
  */
 public class RouteDescriptionListAdapter extends RecyclerView.Adapter<RouteDescriptionListAdapter.ViewHolder> {
@@ -41,9 +43,9 @@ public class RouteDescriptionListAdapter extends RecyclerView.Adapter<RouteDescr
     private UnitSystem mUnitSystem = UnitSystem.METRIC;
 
     /**
-     * Constructs a new instance using a list of {@link Route} elements.
+     * Constructs a new instance using a list of {@link FTCRRoute} elements.
      *
-     * @param routeList list of {@link Route} elements.
+     * @param routeList list of {@link FTCRRoute} elements.
      */
     public RouteDescriptionListAdapter(final List<FTCRRoute> routeList, FTCRRoutePlan routePlan) {
         super();
@@ -124,13 +126,13 @@ public class RouteDescriptionListAdapter extends RecyclerView.Adapter<RouteDescr
         return mTrafficEnabled;
     }
 
-    /**
-     * Sets if total time to arrival should be re-calculated including potential traffic delays.
-     *
-     * <p>Please note, setting this to true will call route tta with traffic. For more details please
-     * see {@link Route#getTtaIncludingTraffic(int)}</p>
-     *
-     * @param isTraffic true if traffic should be enabled, false otherwise.
+    /*
+      Sets if total time to arrival should be re-calculated including potential traffic delays.
+
+      <p>Please note, setting this to true will call route tta with traffic. For more details please
+      see {@link FTCRRoute#getTtaIncludingTraffic(int)}</p>
+
+      @param isTraffic true if traffic should be enabled, false otherwise.
      */
     public void setTrafficEnabled(final boolean isTraffic) {
         mTrafficEnabled = isTraffic;

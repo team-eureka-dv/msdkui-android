@@ -40,17 +40,17 @@ public class GuidanceStreetLabelPresenter extends BaseGuidancePresenter {
     private final List<GuidanceStreetLabelListener> mListener = new ArrayList<>();
 
     /**
-     * Constructs a new instance using a {@link NavigationManager} instance and
+     * Constructs a new instance using a {@link FTCRNavigationManager} instance and
      * a route to follow during guidance.
      *
      * @param context
      *         the required {@link Context}.
      *
      * @param navigationManager
-     *         a {@link NavigationManager}.
+     *         a {@link FTCRNavigationManager}.
      *
      * @param route
-     *         a {@link Route}.
+     *         a {@link FTCRRoute}.
      */
     public GuidanceStreetLabelPresenter(Context context,
                                         FTCRNavigationManager navigationManager,

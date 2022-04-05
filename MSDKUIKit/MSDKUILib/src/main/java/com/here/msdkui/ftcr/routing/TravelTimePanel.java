@@ -165,7 +165,7 @@ public final class TravelTimePanel extends RelativeLayout implements TravelTimeP
      * Sets the time to display.
      *
      * <p>By default, it is showing the current date using
-     * {@link RouteOptions.TimeType#DEPARTURE}.</p>
+     * {@link FTCRRouteOptions.TimeType#DEPARTURE}.</p>
      *
      * @param time the time to set.
      * @return an instance of this class.
@@ -184,22 +184,22 @@ public final class TravelTimePanel extends RelativeLayout implements TravelTimeP
     }
 
     /**
-     * Gets the {@link RouteOptions.TimeType} currently shown.
+     * Gets the {@link FTCRRouteOptions.TimeType} currently shown.
      *
-     * @return the {@link RouteOptions.TimeType}.
-     * By default this is {@link RouteOptions.TimeType#DEPARTURE}.
+     * @return the {@link FTCRRouteOptions.TimeType}.
+     * By default this is {@link FTCRRouteOptions.TimeType#DEPARTURE}.
      */
     public FTCRRouteOptions.TimeType getTimeType() {
         return mTimeType;
     }
 
     /**
-     * Sets the {@link RouteOptions.TimeType} to use.
-     * By default {@link RouteOptions.TimeType#DEPARTURE} is used.
+     * Sets the {@link FTCRRouteOptions.TimeType} to use.
+     * By default {@link FTCRRouteOptions.TimeType#DEPARTURE} is used.
      *
-     * @param type the {@link RouteOptions.TimeType} to set.
+     * @param type the {@link FTCRRouteOptions.TimeType} to set.
      * @return an instance of this class.
-     * @throws IllegalArgumentException if {@link RouteOptions.TimeType} is null.
+     * @throws IllegalArgumentException if {@link FTCRRouteOptions.TimeType} is null.
      */
     public TravelTimePanel setTimeType(final FTCRRouteOptions.TimeType type) {
         if (type == null) {

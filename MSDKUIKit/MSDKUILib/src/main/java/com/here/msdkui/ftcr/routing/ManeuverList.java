@@ -105,18 +105,18 @@ public class ManeuverList extends CustomRecyclerView {
     }
 
     /**
-     * Gets the {@link Route} associated with this list.
+     * Gets the {@link FTCRRoute} associated with this list.
      *
-     * @return the {@link Route} object.
+     * @return the {@link FTCRRoute} object.
      */
     public FTCRRoute getRoute() {
         return mRoute;
     }
 
     /**
-     * Sets a new {@link Route} to be associated with this list.
+     * Sets a new {@link FTCRRoute} to be associated with this list.
      *
-     * @param route the new {@link Route} to use, replacing the old one.
+     * @param route the new {@link FTCRRoute} to use, replacing the old one.
      * @throws IllegalArgumentException if route is null or if no maneuvers have been set for the route.
      */
     public void setRoute(final FTCRRoute route) {

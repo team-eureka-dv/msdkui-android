@@ -245,8 +245,8 @@ public final class RouteUtil {
     /**
      * Gets the {@link RouteOptions.TransportMode} icon of the associated {@link Route}.
      *
-     * @param route
-     *         a {@link Route} instance.
+     * @param routePlan
+     *         a {@link FTCRRoutePlan} instance.
      * @return an icon indicating the transport mode.
      */
     public static Integer getIcon(final FTCRRoutePlan routePlan) {
