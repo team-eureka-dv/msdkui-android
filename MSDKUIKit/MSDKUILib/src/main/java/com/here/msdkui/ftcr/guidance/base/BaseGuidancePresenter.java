@@ -241,7 +241,7 @@ public class BaseGuidancePresenter {
      * @return distance to next {@link Maneuver Maneuver}.
      */
     public long getNextManeuverDistance() {
-        return mNavigationManager.getDistanceToNextManeuver();
+        return mNavigationManager.getDistanceToCurrentManeuver();
     }
 
     /**
